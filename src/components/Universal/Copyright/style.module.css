@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+}
+
+/*Mobile and tablet devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .wrapper {
+    font-size: var(--small-devices-text);
+  }
+}
+/* medium desktop devices */
+@media (min-width: 770px) and (max-width: 960px) {
+}
+
+/* medium and large devices */
+@media (min-width: 1280px) and (max-width: 1440px) {
+}

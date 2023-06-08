@@ -1,0 +1,132 @@
+header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-background);
+  border-bottom: 1px solid #48454534;
+
+  z-index: 100;
+}
+header a {
+  color: var(--color-white);
+}
+.wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+.logo_container {
+  height: 100%;
+  width: auto;
+}
+.logo_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.desktop_menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.button {
+  padding: 15px 30px;
+  background: var(--color-white);
+  color: var(--color-black);
+  border-radius: 4px;
+}
+.mobile_menu {
+  position: absolute;
+  display: none;
+  align-items: center;
+
+  flex-direction: column;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  overflow-y: scroll;
+  gap: 20px;
+  background: var(--color-background);
+  z-index: 100;
+}
+.button_mobile {
+  display: none;
+}
+/*Mobile and tablet devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  header {
+    font-size: var(--small-devices-text);
+  }
+  .wrapper {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .logo_container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo_container img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+  }
+  .mobile_menu {
+    display: flex;
+  }
+  .desktop_menu {
+    display: none;
+  }
+  .button_mobile {
+    display: flex;
+  }
+}
+
+/* medium desktop devices */
+@media (min-width: 770px) and (max-width: 960px) {
+  header {
+    font-size: var(--medium-devices-text);
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .button_mobile {
+    display: none;
+  }
+  .button {
+    padding: 15px 25px;
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 4px;
+  }
+}
+
+/* medium and large devices */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .wrapper {
+    width: 95%;
+  }
+  .button_mobile {
+    display: none;
+  }
+  header {
+    font-size: 12px;
+  }
+  .button {
+    padding: 15px 25px;
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 4px;
+  }
+}

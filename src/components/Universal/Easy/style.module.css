@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+.header h1,
+p {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.left_container {
+  width: 50%;
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left_container button {
+  padding: 15px 30px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--color-background);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.right_container {
+  width: 50%;
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  background: var(--color-background);
+  color: var(--color-white);
+}
+.left_container div span,
+.right_container div span {
+  color: var(--color-gray);
+}
+.right_container button {
+  padding: 15px 30px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--color-white);
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+/*Mobile and tablet devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    font-size: var(--small-devices-text);
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 0;
+  }
+  .left_container,
+  .right_container {
+    width: 100%;
+    padding: 20px;
+  }
+  .wrapper button {
+    width: 100%;
+  }
+}
+/* medium desktop devices */
+@media (min-width: 770px) and (max-width: 960px) {
+  .container {
+    font-size: var(--small-devices-text);
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .wrapper {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .left_container,
+  .right_container {
+    width: 100%;
+    padding: 20px;
+  }
+  .wrapper button {
+    width: 50%;
+  }
+}
+
+/* medium and large devices */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .container {
+    font-size: var(--large-devices-text);
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .wrapper {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .left_container,
+  .right_container {
+    width: 100%;
+    padding: 20px;
+  }
+  .wrapper button {
+    width: 50%;
+  }
+}
