@@ -45,8 +45,9 @@ ul li {
 }
 
 .right_container img {
-  height: auto;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 /*Mobile and tablet devices */
 @media (min-width: 0px) and (max-width: 768px) {

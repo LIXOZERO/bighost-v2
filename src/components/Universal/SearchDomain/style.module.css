@@ -40,7 +40,7 @@
   padding: 20px;
   background: var(--color-white);
 }
-.input_container button {
+.input_container a {
   flex-grow: 1;
   padding: 20px;
   background: var(--color-primary);

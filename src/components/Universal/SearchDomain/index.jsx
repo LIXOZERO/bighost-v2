@@ -6,6 +6,7 @@ import Org from './assets/org.png'
 import Online from './assets/online.png'
 import Store from './assets/store.png'
 import BG from './assets/map-bg.png'
+import { Link } from 'react-router-dom'
 const Domains = [
   {
     image: Com,
@@ -42,9 +43,9 @@ const SearchDomain = () => {
         </p>
         <div className={styles.input_container}>
           <input type="text" placeholder="exemplo.com" />
-          <button>
-            <IoSearch color="#FFF" /> Pesquisar
-          </button>
+          {/* <Link to={'/domain'}> */}
+          <IoSearch color="#FFF" /> Pesquisar
+          {/* </Link> */}
         </div>
         <div className={styles.domain_container}>
           {Domains.map((item, index) => (

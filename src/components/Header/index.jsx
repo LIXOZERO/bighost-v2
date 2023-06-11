@@ -4,6 +4,14 @@ import styles from './style.module.css'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+
+const user = [
+  {
+    name: 'Lucas Fulano',
+    email: 'kucasalberto@gmail.com'
+  }
+]
+
 const Header = () => {
   const [handleMobile, setHandleMobile] = useState(false)
 
@@ -13,6 +21,7 @@ const Header = () => {
         <div data-aos="zoom-in" className={styles.logo_container}>
           <img src={Logo} />
         </div>
+
         <ul className={styles.desktop_menu}>
           <Link>Home</Link>
           <Link>Hosting</Link>

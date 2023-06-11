@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 import { MdOutlineDone } from 'react-icons/md'
-import BG from './assets/bg.png'
+import BG from './assets/b3.png'
 const Hero = () => {
   return (
     <div className={styles.container}>

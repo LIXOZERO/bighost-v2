@@ -19,8 +19,10 @@ ul {
 :root {
   --color-background: #000834;
   --color-background-secondary: #f8f9fa;
+  --color-background-third: #f4f5ff;
   --color-gray: #8a8a8a;
   --color-primary: #1cd643;
+  --color-secondary: #2f1c87;
   --color-black: #000;
   --color-white: #fff;
   --small-devices-text: 12px;
