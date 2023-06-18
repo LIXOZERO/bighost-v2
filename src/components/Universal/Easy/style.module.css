@@ -4,8 +4,10 @@
   align-items: center;
   padding: 80px 0;
 }
-.header h1,
-p {
+.header h1 {
+  text-align: center;
+}
+.header p {
   text-align: center;
 }
 .wrapper {

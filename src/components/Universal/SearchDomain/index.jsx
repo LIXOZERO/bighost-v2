@@ -43,9 +43,9 @@ const SearchDomain = () => {
         </p>
         <div className={styles.input_container}>
           <input type="text" placeholder="exemplo.com" />
-          {/* <Link to={'/domain'}> */}
-          <IoSearch color="#FFF" /> Pesquisar
-          {/* </Link> */}
+          <Link to={'/domain'}>
+            <IoSearch color="#FFF" /> Pesquisar
+          </Link>
         </div>
         <div className={styles.domain_container}>
           {Domains.map((item, index) => (

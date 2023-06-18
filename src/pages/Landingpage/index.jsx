@@ -9,6 +9,7 @@ import Support from '../../components/Universal/Support'
 import Easy from '../../components/Universal/Easy'
 import Footer from '../../components/Universal/Footer'
 import Copyright from '../../components/Universal/Copyright'
+import Showcase from '../../components/Universal/Showcase'
 
 const Landingpage = () => {
   return (
@@ -17,6 +18,7 @@ const Landingpage = () => {
       <Hero />
       <SearchDomain />
       <Plans />
+      <Showcase />
       <Services />
       <Technical />
       <Support />

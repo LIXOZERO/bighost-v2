@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 60%;
+  z-index: 200;
+}
+.wrapper_signup {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.overlay_image {
+  background-image: url('./assets/hero-bg-1.jpg');
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overlay_image:before {
+  content: '';
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000834),
+    to(rgba(0, 8, 52, 0.5))
+  );
+  background: linear-gradient(90deg, #000834, rgba(0, 8, 52, 0.5));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+.left_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: 100vh;
+  color: var(--color-white);
+}
+.right_container {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100vh;
+}
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+  background: var(--color-white);
+  padding: 25px 10px;
+}
+
+.input:focus-within {
+  border: 1px solid var(--color-primary);
+}
+.input input {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background: var(--color-white);
+}
+.icon {
+  height: 20px;
+  color: #beb1b1;
+}
+.form_container button {
+  padding: 15px;
+  background: var(--color-background);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.signup_question a {
+  color: var(--color-background);
+}
+/*Mobile and tablet devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .left_container {
+    display: none;
+  }
+  .right_container {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+/* medium desktop devices */
+@media (min-width: 770px) and (max-width: 960px) {
+  .left_container {
+    width: 60%;
+    font-size: 14px;
+  }
+  .right_container {
+    width: 40%;
+    font-size: 14px;
+  }
+}
+
+/* medium and large devices */
+@media (min-width: 1280px) and (max-width: 1440px) {
+}

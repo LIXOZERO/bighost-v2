@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  overflow: hidden;
+}
+.left_container {
+  display: flex;
+  width: 55%;
+  height: 100%;
+}
+.left_container img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.right_container {
+  width: 45%;
+  padding: 40px 0;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper h1 {
+  font-size: 40px;
+}
+.wrapper p {
+  text-align: justify;
+}
+.services {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services_button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.services_button a {
+  padding: 15px 60px;
+  background: var(--color-background);
+  color: var(--color-white);
+  border-radius: 10px;
+}
+.price {
+  font-weight: bold;
+}
+
+/*Mobile and tablet devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left_container {
+    width: 100%;
+  }
+  .right_container {
+    width: 100%;
+    font-size: 12px;
+  }
+  .wrapper h1 {
+    font-size: 20px;
+  }
+  .services {
+    width: 100%;
+  }
+  .services_button {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .services_button a {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* medium desktop devices */
+@media (min-width: 770px) and (max-width: 960px) {
+  .left_container {
+    width: 55%;
+  }
+  .right_container {
+    width: 45%;
+    font-size: 12px;
+  }
+  .wrapper h1 {
+    font-size: 20px;
+  }
+  .services {
+    width: 100%;
+  }
+  .services_button {
+    gap: 10px;
+  }
+  .services_button a {
+    text-align: center;
+  }
+}
+
+/* medium and large devices */
+@media (min-width: 1280px) and (max-width: 1440px) {
+}
