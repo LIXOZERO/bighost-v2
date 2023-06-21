@@ -91,7 +91,7 @@ const Technical = () => {
         <div className={styles.solution_container}>
           {services.map((item, index) => (
             <div
-              // data-aos="zoom-out-down"
+              data-aos="zoom-out-down"
               key={index}
               className={styles.box}
             >
