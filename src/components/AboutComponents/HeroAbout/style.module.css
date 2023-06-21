@@ -67,6 +67,9 @@
 }
 /*Mobile and tablet devices */
 @media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    font-size: 12px;
+  }
   .wrapper {
     flex-direction: column;
   }
