@@ -33,6 +33,7 @@ const Header = () => {
         {handleMobile && (
           <ul data-aos="fade-down" className={styles.mobile_menu}>
             <Link>Home</Link>
+            <Link to={'/About'}>About</Link>
             <Link>Hosting</Link>
             <Link>Support</Link>
             <Link className={styles.button}>Get started</Link>
