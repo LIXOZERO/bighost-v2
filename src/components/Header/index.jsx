@@ -28,6 +28,7 @@ const Header = () => {
 
         <ul className={styles.desktop_menu}>
           <Link to={'/'}>Home</Link>
+          <Link to={'/About'}>About</Link>
           <Link>Hosting</Link>
           <Link>Support</Link>
           <Link className={styles.button}>Get started</Link>
