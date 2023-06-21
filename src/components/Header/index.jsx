@@ -18,12 +18,16 @@ const Header = () => {
   return (
     <header>
       <nav className={styles.wrapper}>
-        <div data-aos="zoom-in" className={styles.logo_container}>
+        <Link
+          to={'/'}
+          data-aos="zoom-in"
+          className={styles.logo_container}
+        >
           <img src={Logo} />
-        </div>
+        </Link>
 
         <ul className={styles.desktop_menu}>
-          <Link>Home</Link>
+          <Link to={'/'}>Home</Link>
           <Link>Hosting</Link>
           <Link>Support</Link>
           <Link className={styles.button}>Get started</Link>
