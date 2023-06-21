@@ -23,7 +23,7 @@
 }
 .box {
   width: 340px;
-  height: 350px;
+  height: 220px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;

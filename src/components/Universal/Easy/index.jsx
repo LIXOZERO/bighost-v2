@@ -18,7 +18,7 @@ const Easy = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className={styles.left_container}
+          className={styles.box_wrapper}
         >
           <div>
             <h3>Start a New Website</h3>
@@ -58,10 +58,51 @@ const Easy = () => {
           </div>
         </div>
         <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className={styles.right_container}
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className={styles.box_wrapper}
+        >
+          <div>
+            <h3>Start a New Website</h3>
+          </div>
+          <div className={styles.box}>
+            <h4>One-click App Marketplace</h4>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+          </div>
+          <div className={styles.box}>
+            <h4>The best DIY solution</h4>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+          </div>
+          <div className={styles.box}>
+            <h4>Step by Step Tutorials</h4>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+          </div>
+          <div className={styles.box}>
+            <h4>Unlimited 24/7 Priority Support</h4>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+          </div>
+          <button>Start now</button>
+          <div className={styles.box}>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+            <span>
+              Over 450 Apps ready to be installed in seconds
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className={styles.box_wrapper}
         >
           <div>
             <h3>Start a New Website</h3>

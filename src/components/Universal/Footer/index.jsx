@@ -42,7 +42,7 @@ const Footer = () => {
           <h4>COMPANY</h4>
 
           <ul>
-            <Link>About</Link>
+            <Link to={'/About'}>About</Link>
             <Link>Affiliates</Link>
             <Link>Blog</Link>
             <Link>Carrers</Link>

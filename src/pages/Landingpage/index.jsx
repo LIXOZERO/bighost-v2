@@ -18,8 +18,8 @@ const Landingpage = () => {
       <Hero />
       <SearchDomain />
       <Plans />
-      <Showcase />
       <Services />
+      <Showcase />
       <Technical />
       <Support />
       <Easy />
