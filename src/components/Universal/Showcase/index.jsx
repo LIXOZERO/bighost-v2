@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style.module.css'
-import BG from './assets/girl-with-marketplace.png'
+import BG from './assets/girl-with-marketplace.jpg'
 import { Link } from 'react-router-dom'
 const Showcase = () => {
   return (

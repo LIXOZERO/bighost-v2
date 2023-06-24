@@ -79,8 +79,9 @@
     margin-top: 20px;
   }
   .box_wrapper {
-    width: 100%;
+    width: 450px;
     padding: 20px;
+    background: yellow;
   }
   .wrapper button {
     width: 50%;
@@ -88,7 +89,7 @@
 }
 
 /* medium and large devices */
-@media (min-width: 1280px) and (max-width: 1440px) {
+@media (min-width: 1280px) {
   .container {
     font-size: var(--large-devices-text);
   }
@@ -98,9 +99,12 @@
   .wrapper {
     width: 90%;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .box_wrapper {
-    width: 100%;
+    width: 400px;
     padding: 20px;
   }
   .wrapper button {

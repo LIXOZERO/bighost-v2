@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Recovery from '../pages/Recovery'
 import About from '../pages/About'
+import Policies from '../pages/Policies'
 const MainRoutes = () => {
   return (
     <BrowserRouter>
@@ -15,7 +16,8 @@ const MainRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/recovery-account" element={<Recovery />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/policies" element={<Policies />} />
       </Routes>
     </BrowserRouter>
   )
