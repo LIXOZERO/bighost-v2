@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/Header'
 import Hero from '../../components/Universal/Hero'
 import SearchDomain from '../../components/Universal/SearchDomain'
@@ -12,6 +12,12 @@ import Copyright from '../../components/Universal/Copyright'
 import Showcase from '../../components/Universal/Showcase'
 
 const Landingpage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
   return (
     <>
       <Header />

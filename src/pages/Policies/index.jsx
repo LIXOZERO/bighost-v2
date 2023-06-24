@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './style.module.css'
 import Header from '../../components/Header'
 import Handshake from './assets/handshake.svg'
@@ -65,6 +65,13 @@ const policies = [
 ]
 
 const Policies = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
+
   return (
     <div className={styles.container}>
       <Header />
